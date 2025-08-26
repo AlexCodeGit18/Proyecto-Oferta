@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Técnico en Alistamiento de Laboratorios - SENA</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e8f5e9, #c8e6c9);
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .header {
+            background: url('https://onac.org.co/wp-content/uploads/2021/03/LAB-foto.jpg') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 77, 64, 0.75); /* Overlay más oscuro del color del SENA */
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .header-content h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5em; /* Tamaño ajustado para dispositivos móviles */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        .header-content p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8em;
+            font-weight: 900;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin: 10px 0 0;
+        }
+        
+        @media (min-width: 768px) {
+            .header-content h1 {
+                font-size: 3.5em;
+            }
+            .header-content p {
+                font-size: 2.5em;
+            }
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: -60px auto 20px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .section {
+            background-color: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #004d40;
+            font-size: 2em;
+            border-bottom: 3px solid #004d40;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin: 20px auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            margin: 20px 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            gap: 15px;
+        }
+
+        li {
+            background: #e0f2f1;
+            padding: 15px;
+            border-left: 5px solid #00796b;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        li:hover {
+            background-color: #b2dfdb;
+        }
+
+        .cta {
+            text-align: center;
+            padding: 40px;
+            background: #004d40;
+            color: white;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+
+        .cta h2 {
+            color: white;
+        }
+
+        .cta a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #ff5722;
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #e64a19;
+            transform: scale(1.05);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-content">
+            <h1>¡TU FUTURO COMIENZA EN EL LABORATORIO!</h1>
+            <p style="color:rgb(27, 209, 81);">Técnico en Alistamiento de Laboratorios de Análisis y Ensayos para la Industria</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Acerca del Programa 📚</h2>
+            <p>El programa del SENA te forma con altas cualidades profesionales para la industria. Con 2208 horas de formación (<strong>9 meses de etapa lectiva y 6 meses de etapa productiva</strong>) estarás listo para enfrentar los desafíos del sector y garantizar la calidad en cada proceso.</p>
+        </div>
+        
+        <div class="image-container">
+            <img src="/img/oferta.jpeg" alt="Oferta de Formación del SENA" />
+        </div>
+
+        <div class="section">
+            <h2>Puntos Fuertes del Programa 💡</h2>
+            <ul>
+                <li><strong>Alta Oportunidad Laboral:</strong> La industria necesita profesionales como tú. Existe una gran demanda de técnicos de laboratorio.</li>
+                <li><strong>Formación de Calidad:</strong> Aprende a través de proyectos reales y metodologías activas que simulan el entorno de trabajo.</li>
+                <li><strong>Tecnología de Vanguardia:</strong> Te entrenamos en el uso de equipos especializados como espectrómetros, balanzas de precisión y microscopios, en laboratorios dotados para tu formación.</li>
+                <li><strong>Conocimiento Especializado:</strong> Adquiere destrezas únicas en preparación de muestras, gestión de residuos peligrosos y control ambiental.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Video Informativo ▶️</h2>
+            <p>Conoce de cerca lo que te espera en el programa "Técnico en Alistamiento de Laboratorios". Experiencia práctica en un entorno real de laboratorio.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/lrzrCstKUsI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Ventajas para Ti 🚀</h2>
+            <ul>
+                <li><strong>Entrada Directa al Mercado Laboral:</strong> Serás un profesional idóneo, listo para el manejo y cuidado de laboratorios.</li>
+                <li><strong>Impulsa tu Emprendimiento:</strong> Obtén las bases para desarrollar tus propios proyectos en la industria.</li>
+                <li><strong>Impacto en tu Comunidad:</strong> Aplica tus conocimientos para mejorar la calidad de vida a través de proyectos ambientales y de saneamiento.</li>
+                <li><strong>Ruta de Crecimiento:</strong> Este programa es la puerta de entrada para continuar tu formación en otras especialidades y participar en procesos de investigación.</li>
+            </ul>
+        </div>
+
+        <div class="cta">
+            <h2>¡Tu carrera te espera!</h2>
+            <p>Asegura tu futuro con el SENA. Formación gratuita y de calidad.</p>
+            <h3>Correo: mavelasco@sena.edu.co</h3>
+            <a href="https://wa.me/573197130592?text=¡Hola!%20Estoy%20interesado%20en%20el%20programa%20Técnico%20en%20Alistamiento%20de%20Laboratorios%20del%20SENA.%20¿Podrían%20darme%20más%20información?" target="_blank">¡Inscríbete Ahora!</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2025 © Ing Mario Velasco.</p>
+    </div>
+
+</body>
+</html>
